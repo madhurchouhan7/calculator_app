@@ -48,4 +48,4 @@ Distributed under the MIT License. See LICENSE for more information.
 ## Contact
 email : madhurchouhan7@gmail.com
 
-Project Link: https://github.com/your-username/calculator-app
+Project Link: [https://github.com/your-username/calculator-app](https://github.com/madhurchouhan7/calculator_app)
