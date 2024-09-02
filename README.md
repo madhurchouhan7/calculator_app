@@ -12,7 +12,9 @@ A simple and intuitive calculator app built with Flutter. This app supports basi
 
 ## Screenshots
 
-![Calculator App Screenshot](/lib/assets/Screenshot%20(146).png)
+![Calculator App Recording](/lib/assets/screenshots/Qemu%202024.09.01%20-%2020.32.00.01%20(online-video-cutter.com).mp4)
+
+![Calculator App Screenshot](/lib/assets/screenshots/Screenshot%20(146).png)
 
 ## Getting Started
 
