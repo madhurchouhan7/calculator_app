@@ -1,5 +1,6 @@
 import 'package:expressions/expressions.dart';
 import 'package:flutter/material.dart';
+import 'package:calculator_app/screens/custom_widgets.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -537,104 +538,33 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                // + or - thing button
-                InkWell(
-                  highlightColor: Colors.grey[800],
-                  borderRadius: BorderRadius.circular(20),
+                CalculatorButton(
+                  label: '+/-',
+                  color: Colors.grey[800]!,
                   onTap: () {
                     buttonPressed('+/-');
                   },
-                  child: Container(
-                    width: 90,
-                    height: 90,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[800],
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child: const Center(
-                      child: Text(
-                        "+/-",
-                        style: TextStyle(
-                          fontSize: 30,
-                        ),
-                      ),
-                    ),
-                  ),
                 ),
-
-                //zero button
-                InkWell(
-                  highlightColor: Colors.grey[800],
-                  borderRadius: BorderRadius.circular(20),
+                CalculatorButton(
+                  label: '0',
+                  color: Colors.grey[800]!,
                   onTap: () {
                     buttonPressed('0');
                   },
-                  child: Container(
-                    width: 90,
-                    height: 90,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[800],
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child: const Center(
-                      child: Text(
-                        "0",
-                        style: TextStyle(
-                          fontSize: 30,
-                        ),
-                      ),
-                    ),
-                  ),
                 ),
-
-                // dot or decimal
-                InkWell(
-                  highlightColor: Colors.grey[800],
-                  borderRadius: BorderRadius.circular(20),
+                CalculatorButton(
+                  label: '.',
+                  color: Colors.grey[800]!,
                   onTap: () {
                     buttonPressed('.');
                   },
-                  child: Container(
-                    width: 90,
-                    height: 90,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[800],
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child: const Center(
-                      child: Text(
-                        " . ",
-                        style: TextStyle(
-                          fontSize: 30,
-                        ),
-                      ),
-                    ),
-                  ),
                 ),
-
-                // equals to button
-                InkWell(
-                  highlightColor: Colors.deepPurple[800],
-                  borderRadius: BorderRadius.circular(20),
+                CalculatorButton(
+                  label: '=',
+                  color: Colors.deepPurple[800]!,
                   onTap: () {
                     buttonPressed('=');
                   },
-                  child: Container(
-                    width: 90,
-                    height: 90,
-                    decoration: BoxDecoration(
-                      color: Colors.deepPurple[800],
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child: const Center(
-                      child: Text(
-                        " = ",
-                        style: TextStyle(
-                          fontSize: 30,
-                        ),
-                      ),
-                    ),
-                  ),
                 ),
               ],
             ),
