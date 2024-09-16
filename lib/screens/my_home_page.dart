@@ -70,23 +70,26 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
 
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(right: 16),
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(20),
-                    onTap: () {
-                      buttonPressed('BACKSPACE');
-                    },
-                    child: Icon(
-                      Icons.backspace_rounded,
-                      color: Colors.grey[200],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right: 16),
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(20),
+                      onTap: () {
+                        buttonPressed('BACKSPACE');
+                      },
+                      child: Icon(
+                        Icons.backspace_rounded,
+                        color: Colors.grey[200],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
 
             const Divider(),
