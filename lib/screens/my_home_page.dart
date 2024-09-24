@@ -104,105 +104,40 @@ class _MyHomePageState extends State<MyHomePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      //C button
-                      InkWell(
-                        highlightColor: Colors.grey[800],
-                        borderRadius: BorderRadius.circular(20),
+                      // C button
+                      CalculatorButton(
+                        label: 'C',
+                        color: Colors.grey[800]!,
                         onTap: () {
                           buttonPressed('C');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              " C ",
-                              style: TextStyle(
-                                fontSize: 30,
-                                color: Colors.red,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
-                  
+
                       // () button
-                      InkWell(
-                        highlightColor: Colors.deepPurple[800],
-                        borderRadius: BorderRadius.circular(20),
+                      CalculatorButton(
+                        label: '()',
+                        color: Colors.deepPurple[800]!,
                         onTap: () {
-                          buttonPressed('()');
+                          buttonPressed('( )');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.deepPurple[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              "( )",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
-                  
-                      // %
-                      InkWell(
-                        highlightColor: Colors.deepPurple[800],
-                        borderRadius: BorderRadius.circular(20),
+
+                      // % button
+                      CalculatorButton(
+                        label: '%',
+                        color: Colors.deepPurple[800]!,
                         onTap: () {
                           buttonPressed('%');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.deepPurple[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              " % ",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
-                  
+
                       // ÷ button
-                      InkWell(
-                        highlightColor: Colors.deepPurple[800],
-                        borderRadius: BorderRadius.circular(20),
+                      CalculatorButton(
+                        label: '÷',
+                        color: Colors.deepPurple[800]!,
                         onTap: () {
                           buttonPressed('÷');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.deepPurple[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              " ÷ ",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
                     ],
                   ),
@@ -215,104 +150,40 @@ class _MyHomePageState extends State<MyHomePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      //7 button
-                      InkWell(
-                        highlightColor: Colors.grey[800],
-                        borderRadius: BorderRadius.circular(20),
+                      // 7 button
+                      CalculatorButton(
+                        label: '7',
+                        color: Colors.grey[800]!,
                         onTap: () {
                           buttonPressed('7');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              " 7 ",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
-                  
+
                       // 8 button
-                      InkWell(
-                        highlightColor: Colors.grey[800],
-                        borderRadius: BorderRadius.circular(20),
+                      CalculatorButton(
+                        label: '8',
+                        color: Colors.grey[800]!,
                         onTap: () {
                           buttonPressed('8');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              "8",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
-                  
-                      // 9
-                      InkWell(
-                        highlightColor: Colors.grey[800],
-                        borderRadius: BorderRadius.circular(20),
+
+                      // 9 button
+                      CalculatorButton(
+                        label: '9',
+                        color: Colors.grey[800]!,
                         onTap: () {
                           buttonPressed('9');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              " 9 ",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
-                  
-                      // X button
-                      InkWell(
-                        highlightColor: Colors.deepPurple[800],
-                        borderRadius: BorderRadius.circular(20),
+
+                      // x button
+                      CalculatorButton(
+                        label: 'x',
+                        color: Colors.deepPurple[800]!,
                         onTap: () {
                           buttonPressed('*');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.deepPurple[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              " X ",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
                     ],
                   ),
@@ -325,104 +196,40 @@ class _MyHomePageState extends State<MyHomePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      //4 button
-                      InkWell(
-                        highlightColor: Colors.grey[800],
-                        borderRadius: BorderRadius.circular(20),
+                      // 4 button
+                      CalculatorButton(
+                        label: '4',
+                        color: Colors.grey[800]!,
                         onTap: () {
                           buttonPressed('4');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              " 4 ",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
-                  
+
                       // 5 button
-                      InkWell(
-                        highlightColor: Colors.grey[800],
-                        borderRadius: BorderRadius.circular(20),
+                      CalculatorButton(
+                        label: '5',
+                        color: Colors.grey[800]!,
                         onTap: () {
                           buttonPressed('5');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              "5",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
-                  
-                      // 6
-                      InkWell(
-                        highlightColor: Colors.grey[800],
-                        borderRadius: BorderRadius.circular(20),
+
+                      // 6 button
+                      CalculatorButton(
+                        label: '6',
+                        color: Colors.grey[800]!,
                         onTap: () {
                           buttonPressed('6');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              " 6 ",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
-                  
+
                       // - button
-                      InkWell(
-                        highlightColor: Colors.deepPurple[800],
-                        borderRadius: BorderRadius.circular(20),
+                      CalculatorButton(
+                        label: '-',
+                        color: Colors.deepPurple[800]!,
                         onTap: () {
                           buttonPressed('-');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.deepPurple[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              " - ",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
                     ],
                   ),
@@ -435,104 +242,40 @@ class _MyHomePageState extends State<MyHomePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      //1 button
-                      InkWell(
-                        highlightColor: Colors.grey[800],
-                        borderRadius: BorderRadius.circular(20),
+                      // 1 button
+                      CalculatorButton(
+                        label: '1',
+                        color: Colors.grey[800]!,
                         onTap: () {
                           buttonPressed('1');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              " 1 ",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
-                  
+
                       // 2 button
-                      InkWell(
-                        highlightColor: Colors.grey[800],
-                        borderRadius: BorderRadius.circular(20),
+                      CalculatorButton(
+                        label: '2',
+                        color: Colors.grey[800]!,
                         onTap: () {
                           buttonPressed('2');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              "2",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
-                  
-                      // 3
-                      InkWell(
-                        highlightColor: Colors.grey[800],
-                        borderRadius: BorderRadius.circular(20),
+
+                      // 3 button
+                      CalculatorButton(
+                        label: '3',
+                        color: Colors.grey[800]!,
                         onTap: () {
                           buttonPressed('3');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              " 3 ",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
-                  
+
                       // + button
-                      InkWell(
-                        highlightColor: Colors.deepPurple[800],
-                        borderRadius: BorderRadius.circular(20),
+                      CalculatorButton(
+                        label: '+',
+                        color: Colors.deepPurple[800]!,
                         onTap: () {
                           buttonPressed('+');
                         },
-                        child: Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.deepPurple[800],
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              " + ",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
-                            ),
-                          ),
-                        ),
                       ),
                     ],
                   ),

@@ -15,14 +15,14 @@ class CalculatorButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0), // Add padding around the button
+      padding: const EdgeInsets.all(5.0), // Add padding around the button
       child: InkWell(
         highlightColor: Colors.grey[800],
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(10),
         onTap: onTap,
         child: Container(
-          width: 90,
-          height: 90,
+          width: 70,
+          height: 65,
           decoration: BoxDecoration(
             color: color,
             borderRadius: BorderRadius.circular(30),
